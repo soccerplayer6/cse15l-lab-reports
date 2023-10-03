@@ -25,6 +25,9 @@ As seen above, typing the ls command with a path to a file as an argument simply
 Typing the cat command by itself with no arguments puts the terminal into an interactive mode where anything the user types is echoed back. In the above screenshot the user typed hello and echo, which were both echoed back. The mode was exited when the user used ctrl+C <br>
 - With a path to a directory as an argument <br>
 ![Image](cat with path.png) <br>
-
+Typing the cat command with a path to a directory as an argument simply outputs that the path is a directory <br>
+- With a path to a file as an argument <br>
+![Image](cat path to file.png) <br>
+Typing the cat command with a path to a file as the argument out puts the content of the file as shown above. The contents of the en-us.txt file were "Hello World!" which is what was outputted. The working directory did not change. 
 
 
