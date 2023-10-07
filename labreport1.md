@@ -1,4 +1,7 @@
-# Basic Filesystem Commands
+# Basic Filesystem Commands <br>
+## File system used for the examples below: <br>
+![Image](filesystem.png) <br>
+In the screenshots below, the pwd command will be used to print the current working directory before and after each command has been run <br>
 ## cd command <br>
 - With no arguments <br>
 ![Image](cd no path.png) <br>
