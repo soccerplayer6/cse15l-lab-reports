@@ -5,10 +5,10 @@ In the screenshots below, the pwd command will be used to print the current work
 ## cd command <br>
 - With no arguments <br>
 ![Image](cd no path.png) <br>
-The cd command with no path specified as an argument changed the working directory from lecture1 to the home directory as seen above <br>
+The cd command with no path specified as an argument changed the working directory from lecture1 to the home directory, as seen above. The working directory before the command was /home/lecture1 and the working directory after was the home directory. The cd command itself changes the working directory to the home directory. This is the expected result and isn't an error <br>
 - With a path to a directory as an argument <br>
 ![Image](cd with path.png) <br>
-The cd command with a path specified switches the working directory to the directory of that path <br>
+The cd command with a path specified switches the working directory to the directory of that path. The working directory before the command was the home directory and the working directory after the command was the directory of the path that was specified. This is not an error and is the intended result <br>
 - With a path to a file as an argument <br>
 ![Image](cd path to file.png) <br>
 The command returned an error because the cd command is used to switch directories, and a file is not a directory <br>
