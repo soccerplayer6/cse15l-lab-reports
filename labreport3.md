@@ -40,4 +40,44 @@ A test for input that doesn't induce a failure is below: <br>
 ```
 ![testpassed](/images/testpassed.png) <br>
 The only test case that failed is the testAv2 test function which was from above. The test function testAv1 didn't fail <br>
+## Code before fixing the bug
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+## Code After fixing the bug
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    boolean lowestFlag = false;
+    for(double num: arr) {
+      if (lowestFlag == false)
+      {
+        if (num == lowest)
+        {
+          lowestFlag = true;
+        }
+      }
+      else { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+![fixed](/images/fixed.png) <br>
+The fix addresses the issue by creating a boolean variable called lowestFlag that is false by default and set to true when the lowest number is first found in the array. When the lowest number is first found in the array, the variable is set to true and the lowest number is correctly not added to the sum. Since lowestFlag is now true, every other element of the array will now be added to the list, even if it is another instance of the lowest number. This way if the test array is {2.0,2.0,2.0}, 2.0 is returned, not 0.0. <br>
 
