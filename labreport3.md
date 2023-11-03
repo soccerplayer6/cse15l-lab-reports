@@ -80,4 +80,20 @@ static double averageWithoutLowest(double[] arr) {
 ```
 ![fixed](/images/fixed.png) <br>
 The fix addresses the issue by creating a boolean variable called lowestFlag that is false by default and set to true when the lowest number is first found in the array. When the lowest number is first found in the array, the variable is set to true and the lowest number is correctly not added to the sum. Since lowestFlag is now true, every other element of the array will now be added to the list, even if it is another instance of the lowest number. This way if the test array is {2.0,2.0,2.0}, 2.0 is returned, not 0.0. <br>
-
+## Part 2 - Researching Commands
+The command I will be researching on is the less command. This command is interesting because when you run it to view a file it puts you into its own interactive terminal where there are other commands you can run to do things inside the file <br>
+The syntax for using the command is: <br>
+``` less [options] filename ```
+## / command
+When using the less commands with no options, it opens up the file and takes over your terminal so you can type additional commands. If you type ```/[string]```, it will search forward in the file for the string you have specified. An example is below: <br>
+![searchcommand](/images/searchcommand.png) <br>
+![search](/images/search.png) <br>
+![search1](/images/search1.png) <br>
+In this case I used it to find the word "at" in the chapter-1.txt file in the ```technical/911report``` directory <br>
+![search5](/images/search5.png) <br>
+![search3](/images/search3.png) <br>
+![search4](/images/search4.png) <br>
+In this case it was used to find the word "in" in the chapter-2.txt file in the  ```technical/911report``` directory <br>
+This command is useful because searching for words in files and seeing where they are used is a commonly needed thing when searching through files <br>
+## Option -g
+When used with the less command, the -g option highlights the string that was last found when using the ```/``` command <br>
