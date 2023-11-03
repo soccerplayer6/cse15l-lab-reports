@@ -118,9 +118,9 @@ Above is an example of the command being used with the chapter-2.txt file. This 
 [Source](https://phoenixnap.com/kb/less-command-in-linux) <br>
 ## Option -p
 When used with the less command, the -p command can be used to open a file at the first occurrence of the word that you specify. The command is used like this: <br>
-```less -p[word] filename```
+```less -p[word] filename``` <br>
 ![p](/images/p.png)<br>
-![p1](/images/p1/png) <br>
+![p1](/images/p1.png) <br>
 In the above case, the file was opened, and the string "Logan" was search for and the line containing the first occurrence of "Logan" was displayed as the first line. Another example is below: <br>
 ![p2](/images/p2.png) <br>
 ![p3](/images/p3.png) <br>
