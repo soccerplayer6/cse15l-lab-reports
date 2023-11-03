@@ -95,7 +95,7 @@ In this case I used it to find the word "at" in the chapter-1.txt file in the ``
 ![search4](/images/search4.png) <br>
 In this case it was used to find the word "in" in the chapter-2.txt file in the  ```technical/911report``` directory <br>
 This command is useful because searching for words in files and seeing where they are used is a commonly needed thing when searching through files <br>
-[Source](https://phoenixnap.com/kb/less-command-in-linux) <br>
+[https://phoenixnap.com/kb/less-command-in-linux](https://phoenixnap.com/kb/less-command-in-linux) <br>
 ## Option -J
 When used with the less command, the -J option adds a column on the left of the screen that shows which lines have the words that you searched for using the ```/``` command. <br>
 The command is used as follows: ```less -J filename``` <br>
@@ -105,7 +105,7 @@ In this case the ```/at``` command was used to find words in the file with "at" 
 ![J2](/images/J2.png) <br>
 ![J3](/images/J3.png) <br>
 In this case, the ```/in``` command was used to search for words with "in" in them. The -J option displayed the column on the left that shows which lines have occurences of "in". This feature is useful because if there is a big file and there aren't many occurences of the word it can make it easy to find the lines that have the word in them. <br>
-[Source](https://phoenixnap.com/kb/less-command-in-linux) <br>
+[https://phoenixnap.com/kb/less-command-in-linux](https://phoenixnap.com/kb/less-command-in-linux) <br>
 ## Option -N
 When used with the less command, the -N option will display line numbers along with the contents of the file. The command is used as follows: <br>
 ```less -N filename``` <br>
@@ -115,7 +115,7 @@ Above is an example of the command being used with the chapter-1.txt file.
 ![J6](/images/J6.png) <br>
 ![J7](/images/J7.png) <br>
 Above is an example of the command being used with the chapter-2.txt file. This command is useful because having line numbers can be useful when trying to find your place in a file. Referring to a line by its line number is standard <br>
-[Source](https://phoenixnap.com/kb/less-command-in-linux) <br>
+[https://phoenixnap.com/kb/less-command-in-linux](https://phoenixnap.com/kb/less-command-in-linux) <br>
 ## Option -p
 When used with the less command, the -p command can be used to open a file at the first occurrence of the word that you specify. The command is used like this: <br>
 ```less -p[word] filename``` <br>
@@ -125,4 +125,4 @@ In the above case, the file was opened, and the string "Logan" was search for an
 ![p2](/images/p2.png) <br>
 ![p3](/images/p3.png) <br>
 In the above example the -p option was used with a different file and the word "transliteration" was searched for. This command is useful if you were looking for a specific word and wanted to open the file exactly where the first occurence of that word was.  <br>
-[Source](https://phoenixnap.com/kb/less-command-in-linux) <br>
+[https://phoenixnap.com/kb/less-command-in-linux](https://phoenixnap.com/kb/less-command-in-linux) <br>
