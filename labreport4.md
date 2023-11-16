@@ -27,7 +27,7 @@ I then typed ```<:wq>```, which saved and exited the file. <br>
 Below is a screenshot of what the terminal looks like after executing these commands: <br>
 ![term](/images/term.png) <br>
 ## Run the tests, demonstrating that they now succeed
-To run the tests, I pressed ```<up><up>``` to go up 2 commands in my history to where I ran the command ```bash test.sh``` previously <br>
+To run the tests, I pressed ```<up><up><enter>``` to go up 2 commands in my history to where I ran the command ```bash test.sh``` previously and run that command<br>
 Below is the output showing that the tests ran successfully <br>
 ![success](/images/success.png) <br>
 ## Commit and push the following changes to your github account
