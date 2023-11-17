@@ -30,4 +30,18 @@ Below is a screenshot of what the terminal looks like after executing these comm
 To run the tests, I pressed ```<up><up><enter>``` to go up 2 commands in my history to where I ran the command ```bash test.sh``` previously and run that command<br>
 Below is the output showing that the tests ran successfully <br>
 ![success](/images/success.png) <br>
-## Commit and push the following changes to your github account
+## Commit and push the following changes to your GitHub account
+To commit and push the changes to my GitHub account, it took 5 commands. 
+First command: ```git init``` <br>
+This command initialized the repository in the directory <br>
+Second command: ```git add ListExamples.java``` <br>
+This command added ListExamples.java as a file to be committed <br>
+Third command: ```git status``` <br>
+This command confirms that the ListExamples.java file was modified and added as a file ready to be committed correctly <br>
+Fourth command: ```git commit -m "fix bug"``` <br>
+This command commits the file so that it is ready to be pushed to Github. <br>
+Fifth command: ```git push``` <br>
+This command pushes the changes in the ListExamples.java file to Github, where it updated in the repository <br>
+Below are screenshots of the output of the above commands <br>
+![git init](/images/git init.png) <br>
+![git push](/images/git push.png) <br>
