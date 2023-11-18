@@ -86,11 +86,11 @@ The syntax for using the command is: <br>
 ``` less [options] filename ```
 ## / command
 When using the less commands with no options, it opens up the file and takes over your terminal so you can type additional commands. If you type ```/[string]```, it will search forward in the file for the string you have specified. An example is below: <br>
-![searchcommand](/images/searchcommand.png) <br>
+```less technical/911report/chapter-1.txt```<br>
 ![search](/images/search.png) <br>
 ![search1](/images/search1.png) <br>
 In this case I used it to find the word "at" in the chapter-1.txt file in the ```technical/911report``` directory <br>
-![search5](/images/search5.png) <br>
+```less technical/911report/chapter-2.txt```<br>
 ![search3](/images/search3.png) <br>
 ![search4](/images/search4.png) <br>
 In this case it was used to find the word "in" in the chapter-2.txt file in the  ```technical/911report``` directory <br>
