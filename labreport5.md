@@ -48,7 +48,7 @@ class ListExamples {
     }
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
-      // change index1 below to index2 to fix test
+     
       index2 += 1;
     }
     return result;
@@ -59,7 +59,7 @@ class ListExamples {
 ``` 
 ![fileDirectory](/images/fileDirectory.png) <br>
 ## TA Response
-Try using the java debugger to see exactly where the exceptions get thrown. To use the debugger, go to your bash script that you used to compile and run the java program. Add the -g flag after javac and replace the java command with jdb. Also replace the -cp in the java command with -classpath. Once you run the script with the updates, use ```stop at ListExamples:linenumber``` to set a breakpoint and run to run the program. Use the ```next``` command to go line by line and see where the exception gets thrown. <br>
+Try using the java debugger to see exactly where the exceptions get thrown. To use the debugger, go to your bash script that you used to compile and run the java program. Add the -g flag after javac and replace the java command with jdb. Also replace the -cp in the java command with -classpath. Once you run the script with the updates, use ```stop at ListExamplesTests:linenumber``` to set a breakpoint and run to run the program. Use the ```next``` command to go line by line and step to step into methods in the ListExamples.java file and see where the exception gets thrown. <br>
 ## Student Response
 Stepping through one of the loops I discovered an infinite loop by printing the local variables. The screenshot is below: <br>
 ![locals](/images/locals.png) <br>
@@ -120,7 +120,6 @@ class ListExamples {
     }
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
-      // change index1 below to index2 to fix test
       index2 += 1;
     }
     return result;
@@ -128,5 +127,20 @@ class ListExamples {
 
 
 }
+```
+## Lines ran to trigger the bug
+```bash test.sh```
+```stop at ListExamplesTests:10```
+```run```
+```next x 2```
+```step```
+```next x 18```
+## How to fix the bug
+After stepping through the loop, the user will realize that there is an infinite loop because the wrong variable is being incremented. Specifically, the ```index1``` variable has to be updated to ```index2``` <br>
+```
+while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index1 += 1;
+    }
 ```
 
