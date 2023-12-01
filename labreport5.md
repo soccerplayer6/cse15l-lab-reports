@@ -57,7 +57,7 @@ class ListExamples {
 
 }
 ``` <br>
-![fileDirectory](/images/fileDirectory) <br>
+![fileDirectory](/images/fileDirectory.png) <br>
 ## TA Response
 Try using the java debugger to see exactly where the exceptions get thrown. To use the debugger, go to your bash script that you used to compile and run the java program. Add the -g flag after javac and replace the java command with jdb. Also replace the -cp in the java command with -classpath. Once you run the script with the updates, use ```stop at ListExamples:linenumber``` to set a breakpoint and run to run the program. Use the next command to go line by line and see where the exception gets thrown. 
 
