@@ -65,7 +65,7 @@ Stepping through one of the loops I discovered an infinite loop by printing the 
 ![locals](/images/locals.png) <br>
 ## Setup info
 File and directory structure: <br>
-![fileDirectory](/images/fileDirectory.png)
+![fileDirectory](/images/fileDirectory.png) <br>
 Contents of ListExamples.java before fixing bug is above in the codeblock. Contents of bash.sh before fixing are below:<br>
 ```
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
@@ -129,12 +129,12 @@ class ListExamples {
 }
 ```
 ## Lines ran to trigger the bug
-```bash test.sh```
-```stop at ListExamplesTests:10```
-```run```
-```next x 2```
-```step```
-```next x 18```
+```bash test.sh``` <br>
+```stop at ListExamplesTests:10``` <br>
+```run``` <br>
+```next x 2``` <br>
+```step``` <br>
+```next x 18``` <br>
 ## How to fix the bug
 After stepping through the loop, the user will realize that there is an infinite loop because the wrong variable is being incremented. Specifically, the ```index1``` variable has to be updated to ```index2``` <br>
 ```
@@ -142,7 +142,7 @@ while(index2 < list2.size()) {
       result.add(list2.get(index2));
       index1 += 1;
     }
-```
+``` <br>
 ## Part 2 - Reflection
 Something new I learned from lab in the second half of this quarter is bash scripting. I had seen memes about Computer Science people automating tasks that they could do manually but wasn't exactly sure what tools I would use to automate certain tasks. I now understand how bash scripting can be used for those purposes <br>
 
