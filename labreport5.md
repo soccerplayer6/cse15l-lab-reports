@@ -142,7 +142,8 @@ while(index2 < list2.size()) {
       result.add(list2.get(index2));
       index1 += 1;
     }
-``` <br>
+```
+<br>
 ## Part 2 - Reflection
 Something new I learned from lab in the second half of this quarter is bash scripting. I had seen memes about Computer Science people automating tasks that they could do manually but wasn't exactly sure what tools I would use to automate certain tasks. I now understand how bash scripting can be used for those purposes <br>
 
